@@ -1,0 +1,35 @@
+name: brian_tutorial
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - pip
+  - brian2
+  - gsl
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib-base
+  - seaborn
+  - cython
+  - sympy
+  - nose
+  - pytest
+  - pytest-xdist
+  - jupyterlab
+  - joblib>=0.13
+  - psutil
+  # - xlrd
+  # - scikit-learn
+  # - scikit-plot
+  # - lz4
+  - tqdm
+  - nodejs>=12
+  - ipywidgets
+  - widgetsnbextension
+  - papermill
+  - nbdime
+  - jupyternotify
+  - pip:
+    - brian2tools
+    - brian2modelfitting
