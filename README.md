@@ -24,4 +24,4 @@ The environment may be built without Docker if you have Anaconda (or Miniconda) 
 
 This environment may be launched as a temporary Jupyter notebook in a browser (without installing anything) courtesy of the [binder service](https://mybinder.org) by clicking the button below:
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bdevans/brian_tutorial/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bdevans/brian_tutorial/master?urlpath=lab)
