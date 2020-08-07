@@ -45,11 +45,15 @@ RUN apt-get update \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
 
+# Customisations
+ENV CONDA_DIR=/opt/conda \
+    HOME=/home/$USERNAME
+
 COPY postBuild* .devcontainer/noop.txt /tmp/
 RUN if [ -f "/tmp/postBuild" ]; then /tmp/postBuild; fi \
     && rm -rf /tmp/postBuild
 
-WORKDIR /home/$USERNAME
+WORKDIR $HOME
 
 # Needed for launching JupyterLab independently of VSCode
 EXPOSE 8888
