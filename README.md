@@ -8,7 +8,7 @@ This repository contains the files necessary for building a Docker image contain
 
 ## Run
 
-`docker run -it --init --rm brian_tutorial`
+`docker run -it --init --rm -p 8888:8888 brian_tutorial`
 
 ## VSCode
 
